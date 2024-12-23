@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&amp;display=swap');
+      .title { font-family: 'Orbitron', sans-serif; }
+    </style>
+    
+    <pattern id="scanlines" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="1" x2="800" y2="1" stroke="#00ff00" stroke-width="1" opacity="0.3">
+        <animate attributeName="y1" from="0" to="8" dur="0.1s" repeatCount="indefinite"/>
+        <animate attributeName="y2" from="0" to="8" dur="0.1s" repeatCount="indefinite"/>
+      </line>
+    </pattern>
+
+    <mask id="matrix-mask">
+      <rect width="800" height="400" fill="black"/>
+      <g fill="#ffffff" font-family="monospace" font-size="16">
+        {[...Array(15)].map((_, i) => {
+          const x = i * 60;
+          return `
+            <text x="${x}" y="-100">
+              <animate attributeName="y"
+                       from="-100"
+                       to="500"
+                       dur="${10 + Math.random() * 5}s"
+                       begin="${Math.random() * 5}s"
+                       repeatCount="indefinite"/>
+              101101 010110 101101
+            </text>
+          `;
+        }).join('')}
+      </g>
+    </mask>
+  </defs>
+
+  <rect width="800" height="400" fill="#000"/>
+  <rect width="800" height="400" fill="#00ff00" opacity="0.8" mask="url(#matrix-mask)"/>
+  <rect width="800" height="400" fill="url(#scanlines)"/>
+
+  <!-- Enhanced footprint animations -->
+  <g transform="translate(400,200)">
+    <!-- Base footprint -->
+    <path fill="#00ff00" opacity="0.9">
+      <animate attributeName="d" 
+               values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
+                      M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
+                      M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
+               dur="1.5s"
+               repeatCount="indefinite"/>
+      <animateTransform attributeName="transform"
+                        type="rotate"
+                        from="0 0 0"
+                        to="360 0 0"
+                        dur="6s"
+                        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Echo effects -->
+    <path fill="#00ff00" opacity="0.3">
+      <animate attributeName="d" 
+               values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
+                      M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
+                      M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
+               dur="1.5s"
+               repeatCount="indefinite"
+               begin="0.5s"/>
+      <animate attributeName="transform"
+               values="scale(1);scale(1.5);scale(2);scale(2.5)"
+               dur="2s"
+               repeatCount="indefinite"/>
+      <animate attributeName="opacity"
+               values="0.3;0.2;0.1;0"
+               dur="2s"
+               repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <text class="title" x="400" y="320" 
+        text-anchor="middle" 
+        font-size="36" 
+        fill="#00ff00"
+        letter-spacing="2">
+    TRACK YOUR DIGITAL FOOTPRINT
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <text class="title" x="400" y="350" 
+        text-anchor="middle" 
+        font-size="20"
+        fill="#00ff00"
+        opacity="0.9"
+        letter-spacing="1">
+    by cyber kalki
+  </text>
+
+  <rect width="800" height="2" fill="#00ff00" opacity="0.2">
+    <animate attributeName="y"
+             from="-2"
+             to="400"
+             dur="3s"
+             repeatCount="indefinite"/>
+  </rect>
+</svg>
