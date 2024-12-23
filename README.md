@@ -47,7 +47,8 @@ Access the tool: [https://sub1.kalkikrivadna.com:3000/](https://sub1.kalkikrivad
 ## 🔐 Security Notice
 
 This tool is designed for:
-- Network security testing
+- Network monitoring
+- System Diagnostics 
 - System administration
 - Digital forensics
 - Penetration testing
