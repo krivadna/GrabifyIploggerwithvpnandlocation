@@ -25,7 +25,7 @@
                        dur="${10 + Math.random() * 5}s"
                        begin="${Math.random() * 5}s"
                        repeatCount="indefinite"/>
-              101101 010110 101101
+              101101 010110 101101 101101 010110 101101
             </text>
           `;
         }).join('')}
@@ -77,6 +77,7 @@
 
   <text class="title" x="400" y="320" 
         text-anchor="middle" 
+        font-family="Orbitron"
         font-size="36" 
         fill="#00ff00"
         letter-spacing="2">
