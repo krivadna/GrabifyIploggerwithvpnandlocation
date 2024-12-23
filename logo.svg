@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
   <defs>
     <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
       .title { font-family: 'Orbitron', sans-serif; }
     </style>
     
@@ -39,12 +39,11 @@
 
   <!-- Enhanced footprint animations -->
   <g transform="translate(400,200)">
-    <!-- Base footprint -->
     <path fill="#00ff00" opacity="0.9">
       <animate attributeName="d" 
                values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
-                      M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
-                      M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
+                       M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
+                       M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
                dur="1.5s"
                repeatCount="indefinite"/>
       <animateTransform attributeName="transform"
@@ -55,16 +54,15 @@
                         repeatCount="indefinite"/>
     </path>
     
-    <!-- Echo effects -->
     <path fill="#00ff00" opacity="0.3">
       <animate attributeName="d" 
                values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
-                      M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
-                      M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
+                       M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
+                       M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
                dur="1.5s"
                repeatCount="indefinite"
                begin="0.5s"/>
-      <animate attributeName="transform"
+ <animate attributeName="transform"
                values="scale(1);scale(1.5);scale(2);scale(2.5)"
                dur="2s"
                repeatCount="indefinite"/>
@@ -101,4 +99,4 @@
              dur="3s"
              repeatCount="indefinite"/>
   </rect>
-</svg>
+</svg> ```svg
