@@ -4,8 +4,7 @@
   <img src="logo.svg" width="400" height="400" alt="Cyber Kalki Logo">
 </div>
 
-  <!-- YouTube Link -->
-  [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/klT4bEOtGgc?si=eCZNsqj2Y_hF9XtB)
+
 
   > 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
   
@@ -45,7 +44,8 @@
   - Connection security assessment
 
 ## 🚀 Live Demo
-Access the tool: [https://kalkikrivadna.com/loggerbykalkiob](https://kalkikrivadna.com/loggerbykalkiob)
+  <!-- YouTube Link -->
+  [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/klT4bEOtGgc?si=eCZNsqj2Y_hF9XtB)
 
 ## 🔐 Security Notice
 This tool is designed for:
