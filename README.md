@@ -5,9 +5,7 @@
 </div>
 
   > 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
-  
-  [![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/krivadna/GrabifyIploggerwithvpnandlocation)
-  [![Security](https://img.shields.io/badge/security-enhanced-green.svg)](https://kalkikrivadna.com)
+
   [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
 </div>
 
