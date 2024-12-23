@@ -1,81 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
   <defs>
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+    <style>
+      @font-face {
+        font-family: 'Orbitron';
+        src: url('https://fonts.gstatic.com/s/orbitron/v29/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2') format('woff2');
+        font-weight: 900;
+      }
       .title { font-family: 'Orbitron', sans-serif; }
     </style>
-    
-    <pattern id="scanlines" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
-      <line x1="0" y1="1" x2="800" y2="1" stroke="#00ff00" stroke-width="1" opacity="0.3">
-        <animate attributeName="y1" from="0" to="8" dur="0.1s" repeatCount="indefinite"/>
-        <animate attributeName="y2" from="0" to="8" dur="0.1s" repeatCount="indefinite"/>
-      </line>
-    </pattern>
-
-    <mask id="matrix-mask">
-      <rect width="800" height="400" fill="black"/>
-      <g fill="#ffffff" font-family="monospace" font-size="16">
-        {[...Array(15)].map((_, i) => {
-          const x = i * 60;
-          return `
-            <text x="${x}" y="-100">
-              <animate attributeName="y"
-                       from="-100"
-                       to="500"
-                       dur="${10 + Math.random() * 5}s"
-                       begin="${Math.random() * 5}s"
-                       repeatCount="indefinite"/>
-              101101 010110 101101 101101 010110 101101
-            </text>
-          `;
-        }).join('')}
-      </g>
-    </mask>
   </defs>
-
+  
   <rect width="800" height="400" fill="#000"/>
-  <rect width="800" height="400" fill="#00ff00" opacity="0.8" mask="url(#matrix-mask)"/>
-  <rect width="800" height="400" fill="url(#scanlines)"/>
+  
+  <!-- Scanning bars -->
+  <rect width="800" height="4" fill="#00ff00" opacity="0.3">
+    <animate attributeName="y" values="0;400;0" dur="4s" repeatCount="indefinite"/>
+  </rect>
+  <rect width="4" height="400" fill="#00ff00" opacity="0.3">
+    <animate attributeName="x" values="0;800;0" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
-  <!-- Enhanced footprint animations -->
-  <g transform="translate(400,200)">
-    <path fill="#00ff00" opacity="0.9">
-      <animate attributeName="d" 
-               values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
-                       M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
-                       M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
-               dur="1.5s"
-               repeatCount="indefinite"/>
-      <animateTransform attributeName="transform"
-                        type="rotate"
-                        from="0 0 0"
-                        to="360 0 0"
-                        dur="6s"
-                        repeatCount="indefinite"/>
+  <!-- Running code display -->
+  <text x="20" y="30" fill="#00ff00" font-family="monospace" font-size="12">
+    <tspan x="20" dy="0">Initializing scan...</tspan>
+    <tspan x="20" dy="20">Loading modules...</tspan>
+    <tspan x="20" dy="20">struct digital_footprint {</tspan>
+    <tspan x="20" dy="20">  uint32_t timestamp;</tspan>
+    <tspan x="20" dy="20">  char* location;</tspan>
+    <tspan x="20" dy="20">  byte[] signature;</tspan>
+    <tspan x="20" dy="20">};</tspan>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Viewfinder Elements -->
+  <g stroke="#00ff00" fill="none" stroke-width="2">
+    <path d="M50,50 L50,100 M50,50 L100,50">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M750,50 L750,100 M750,50 L700,50">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M50,350 L50,300 M50,350 L100,350">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M750,350 L750,300 M750,350 L700,350">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" repeatCount="indefinite"/>
     </path>
     
-    <path fill="#00ff00" opacity="0.3">
-      <animate attributeName="d" 
-               values="M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z;
-                       M-25,-35 C-15,-45 15,-45 25,-35 C35,-25 35,5 25,15 C15,25 -15,25 -25,15 C-35,5 -35,-25 -25,-35Z;
-                       M-20,-30 C-10,-40 10,-40 20,-30 C30,-20 30,0 20,10 C10,20 -10,20 -20,10 C-30,0 -30,-20 -20,-30Z"
-               dur="1.5s"
-               repeatCount="indefinite"
-               begin="0.5s"/>
- <animate attributeName="transform"
-               values="scale(1);scale(1.5);scale(2);scale(2.5)"
-               dur="2s"
-               repeatCount="indefinite"/>
-      <animate attributeName="opacity"
-               values="0.3;0.2;0.1;0"
-               dur="2s"
-               repeatCount="indefinite"/>
-    </path>
+    <circle cx="400" cy="200" r="100" opacity="0.5">
+      <animate attributeName="r" values="100;110;100" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="390" y1="200" x2="410" y2="200"/>
+    <line x1="400" y1="190" x2="400" y2="210"/>
   </g>
 
   <text class="title" x="400" y="320" 
         text-anchor="middle" 
-        font-family="Orbitron"
         font-size="36" 
         fill="#00ff00"
         letter-spacing="2">
@@ -87,16 +67,7 @@
         text-anchor="middle" 
         font-size="20"
         fill="#00ff00"
-        opacity="0.9"
-        letter-spacing="1">
+        opacity="0.9">
     by cyber kalki
   </text>
-
-  <rect width="800" height="2" fill="#00ff00" opacity="0.2">
-    <animate attributeName="y"
-             from="-2"
-             to="400"
-             dur="3s"
-             repeatCount="indefinite"/>
-  </rect>
-</svg> 
+</svg>
