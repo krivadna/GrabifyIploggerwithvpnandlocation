@@ -1,13 +1,18 @@
-
 # 🕵️ Track your Digital Footprint by Cyber Kalki
 
-![Matrix Animation](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)
+<div align="center">
+  <!-- Matrix Animation -->
+  ![Matrix Animation](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)
 
-> 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
+  <!-- YouTube Link -->
+  [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/your_video_link_here)
 
-[![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/krivadna/GrabifyIploggerwithvpnandlocation)
-[![Security](https://img.shields.io/badge/security-enhanced-green.svg)](https://kalkikrivadna.com)
-[![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+  > 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
+  
+  [![Version](https://img.shields.io/badge/version-2.1-blue.svg)](https://github.com/krivadna/GrabifyIploggerwithvpnandlocation)
+  [![Security](https://img.shields.io/badge/security-enhanced-green.svg)](https://kalkikrivadna.com)
+  [![License](https://img.shields.io/badge/license-MIT-yellow.svg)](LICENSE)
+</div>
 
 ## 🌟 Core Features
 
@@ -40,12 +45,9 @@
   - Connection security assessment
 
 ## 🚀 Live Demo
-
-Access the tool: (https://kalkikrivadna.com/loggerbykalkiob)
-
+Access the tool: [https://kalkikrivadna.com/loggerbykalkiob](https://kalkikrivadna.com/loggerbykalkiob)
 
 ## 🔐 Security Notice
-
 This tool is designed for:
 - Network monitoring
 - System Diagnostics 
@@ -55,6 +57,4 @@ This tool is designed for:
 - Educational purposes
 
 ## 📞 Support
-
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/kalkimahavatar)
-
