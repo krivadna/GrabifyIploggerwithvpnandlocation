@@ -5,7 +5,7 @@
 </div>
 
   <!-- YouTube Link -->
-  [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)]([https://youtube.com/shorts/klT4bEOtGgc?si=eCZNsqj2Y_hF9XtB)]
+  [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)]([https://youtube.com/shorts/klT4bEOtGgc?si=eCZNsqj2Y_hF9XtB])
 
   > 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
   
