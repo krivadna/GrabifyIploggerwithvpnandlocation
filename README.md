@@ -1,7 +1,7 @@
 # 🕵️ Track your Digital Footprint by Cyber Kalki
 
 <div align="center">
-  <img src="logo.svg" width="800" height="400" alt="Cyber Kalki Logo">
+  <img src="logo.svg" width="800" height="300" alt="Cyber Kalki Logo">
 </div>
 
   > 🛡️ Enterprise-Grade Digital Footprint Analysis Tool
@@ -46,7 +46,7 @@
   [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/shorts/klT4bEOtGgc?si=eCZNsqj2Y_hF9XtB)
 
 
-##  Access Tool 📲 
+##  Access Tool 🔥 
 https://kalkikrivadna.com/loggerbykalkiob
   
 ## 🔐 Security Notice
