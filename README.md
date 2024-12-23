@@ -1,8 +1,8 @@
 # 🕵️ Track your Digital Footprint by Cyber Kalki
 
 <div align="center">
-  <!-- Matrix Animation -->
-  ![Matrix Animation](https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif)
+  <img src="logo.svg" width="400" height="400" alt="Cyber Kalki Logo">
+</div>
 
   <!-- YouTube Link -->
   [![Watch Demo on YouTube](https://img.shields.io/badge/Watch_Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/your_video_link_here)
