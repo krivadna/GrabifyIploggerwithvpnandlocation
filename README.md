@@ -41,7 +41,7 @@
 
 ## 🚀 Live Demo
 
-Access the tool: [https://sub1.kalkikrivadna.com:3000/](https://sub1.kalkikrivadna.com:3000/)
+Access the tool: (https://kalkikrivadna.com/loggerbykalkiob)
 
 
 ## 🔐 Security Notice
